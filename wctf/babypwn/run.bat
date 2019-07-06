@@ -1,0 +1,1 @@
+AppJailLauncher-rs.exe run --enable-outbound -k .\flag.txt -p 10001 .\chall.exe
