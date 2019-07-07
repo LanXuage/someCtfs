@@ -1,6 +1,6 @@
 # Crackme1
-`工具：apktools、dex2jar、ida、jdGui` 
-        拿到apk文件首先使用apktools解包，再使用dex2jar提取apk或者dex文件的jar包。
+`工具：apktools、dex2jar、ida、jdGui`
+拿到apk文件首先使用apktools解包，再使用dex2jar提取apk或者dex文件的jar包。
 ![图1 apk的java源码](_v_images/20190706203010364_359303980.png)
 在jdGui里看到的jar源码的逻辑大概是获取用户输入的用户名和密码，然后将密码送到native的`doSomeThing`方法中处理。好、可以确定主要的处理逻辑应该在链接库里。
 用ida打开apk解包后的lib里的链接库文件。
