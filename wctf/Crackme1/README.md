@@ -25,7 +25,7 @@
 
 按insert添加android，接着打开Structures窗口，按insert，点击add standard structure打开结构体添加窗口，选中`_JNIEnv`点击ok添加结构体。添加成功后就可以回去更改参数变量类型。
 
-![添加JNIEnv结构体](_v_images/20190706211020126_224375814.png)
+![Screenshot from 2019-07-06 21-09-53](_v_images/20190707140423796_1046460266.png)
 
 下图是更改后的ida重新反编译的伪C代码，相对之前，好看了很多。
 
