@@ -1,0 +1,1 @@
+compile("bcra('synt.gkg').ernq()".decode('rot13'),'','single')

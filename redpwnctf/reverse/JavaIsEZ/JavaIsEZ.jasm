@@ -1,0 +1,274 @@
+Classfile /home/bl/Documents/github/someCtfs/redpwnctf/reverse/JavaIsEZ/JavaIsEZ.class
+  Last modified Aug 13, 2019; size 1396 bytes
+  MD5 checksum 26ea766f0e0d2e8a626b38b84ee34c5d
+public class JavaIsEZ
+  minor version: 0
+  major version: 49
+  flags: ACC_PUBLIC
+Constant pool:
+   #1 = String             #83            // noob
+   #2 = String             #82            // You got it right :P
+   #3 = String             #81            // java.utils.ArrayList
+   #4 = Integer            65535
+   #5 = String             #80            // You need to specify the flag...
+   #6 = String             #79            // +?>!|CUo*M;j\ts,=M;s*h,JF0s?8#{Z:
+   #7 = Class              #78            // JavaIsEZ
+   #8 = Class              #77            // java/lang/Object
+   #9 = Utf8               a
+  #10 = Utf8               I
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               Code
+  #14 = Fieldref           #72.#73        // java/lang/System.out:Ljava/io/PrintStream;
+  #15 = Methodref          #67.#68        // java/io/PrintStream.println:(Ljava/lang/Object;)V
+  #16 = Class              #66            // redpwnCTF_says_stop_using_ur_decompiler
+  #17 = Methodref          #61.#62        // java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+  #18 = Methodref          #53.#58        // java/util/concurrent/ThreadLocalRandom.current:()Ljava/util/concurrent/ThreadLocalRandom;
+  #19 = Methodref          #53.#54        // java/util/concurrent/ThreadLocalRandom.nextInt:(II)I
+  #20 = Fieldref           #7.#52         // JavaIsEZ.a:I
+  #21 = Methodref          #34.#49        // java/lang/String.length:()I
+  #22 = Methodref          #34.#46        // java/lang/String.toCharArray:()[C
+  #23 = Methodref          #8.#42         // java/lang/Object."<init>":()V
+  #24 = Class              #45            // java/lang/StringBuilder
+  #25 = Methodref          #24.#42        // java/lang/StringBuilder."<init>":()V
+  #26 = Methodref          #24.#39        // java/lang/StringBuilder.toString:()Ljava/lang/String;
+  #27 = Methodref          #34.#35        // java/lang/String.equals:(Ljava/lang/Object;)Z
+  #28 = Methodref          #24.#31        // java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+  #29 = Class              #30            // java/lang/IllegalMonitorStateException
+  #30 = Utf8               java/lang/IllegalMonitorStateException
+  #31 = NameAndType        #32:#33        // append:(C)Ljava/lang/StringBuilder;
+  #32 = Utf8               append
+  #33 = Utf8               (C)Ljava/lang/StringBuilder;
+  #34 = Class              #38            // java/lang/String
+  #35 = NameAndType        #36:#37        // equals:(Ljava/lang/Object;)Z
+  #36 = Utf8               equals
+  #37 = Utf8               (Ljava/lang/Object;)Z
+  #38 = Utf8               java/lang/String
+  #39 = NameAndType        #40:#41        // toString:()Ljava/lang/String;
+  #40 = Utf8               toString
+  #41 = Utf8               ()Ljava/lang/String;
+  #42 = NameAndType        #43:#44        // "<init>":()V
+  #43 = Utf8               <init>
+  #44 = Utf8               ()V
+  #45 = Utf8               java/lang/StringBuilder
+  #46 = NameAndType        #47:#48        // toCharArray:()[C
+  #47 = Utf8               toCharArray
+  #48 = Utf8               ()[C
+  #49 = NameAndType        #50:#51        // length:()I
+  #50 = Utf8               length
+  #51 = Utf8               ()I
+  #52 = NameAndType        #9:#10         // a:I
+  #53 = Class              #57            // java/util/concurrent/ThreadLocalRandom
+  #54 = NameAndType        #55:#56        // nextInt:(II)I
+  #55 = Utf8               nextInt
+  #56 = Utf8               (II)I
+  #57 = Utf8               java/util/concurrent/ThreadLocalRandom
+  #58 = NameAndType        #59:#60        // current:()Ljava/util/concurrent/ThreadLocalRandom;
+  #59 = Utf8               current
+  #60 = Utf8               ()Ljava/util/concurrent/ThreadLocalRandom;
+  #61 = Class              #65            // java/lang/Class
+  #62 = NameAndType        #63:#64        // forName:(Ljava/lang/String;)Ljava/lang/Class;
+  #63 = Utf8               forName
+  #64 = Utf8               (Ljava/lang/String;)Ljava/lang/Class;
+  #65 = Utf8               java/lang/Class
+  #66 = Utf8               redpwnCTF_says_stop_using_ur_decompiler
+  #67 = Class              #71            // java/io/PrintStream
+  #68 = NameAndType        #69:#70        // println:(Ljava/lang/Object;)V
+  #69 = Utf8               println
+  #70 = Utf8               (Ljava/lang/Object;)V
+  #71 = Utf8               java/io/PrintStream
+  #72 = Class              #76            // java/lang/System
+  #73 = NameAndType        #74:#75        // out:Ljava/io/PrintStream;
+  #74 = Utf8               out
+  #75 = Utf8               Ljava/io/PrintStream;
+  #76 = Utf8               java/lang/System
+  #77 = Utf8               java/lang/Object
+  #78 = Utf8               JavaIsEZ
+  #79 = Utf8               +?>!|CUo*M;j\ts,=M;s*h,JF0s?8#{Z:
+  #80 = Utf8               You need to specify the flag...
+  #81 = Utf8               java.utils.ArrayList
+  #82 = Utf8               You got it right :P
+  #83 = Utf8               noob
+{
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=10, locals=14, args_size=1
+         0: goto          113
+         3: ldc           #1                  // String noob
+         5: jsr           104
+         8: return
+         9: pop
+        10: ldc           #2                  // String You got it right :P
+        12: jsr           104
+        15: return
+        16: astore        11
+        18: aload         8
+        20: swap
+        21: iload         7
+        23: swap
+        24: iastore
+        25: iinc          7, 1
+        28: ret           11
+        30: astore_1
+        31: iconst_0
+        32: istore        7
+        34: bipush        8
+        36: newarray       int
+        38: astore        8
+        40: bipush        97
+        42: jsr           16
+        45: bipush        71
+        47: jsr           16
+        50: bipush        94
+        52: jsr           16
+        55: bipush        89
+        57: jsr           16
+        60: bipush        90
+        62: jsr           16
+        65: bipush        121
+        67: jsr           16
+        70: bipush        72
+        72: jsr           16
+        75: bipush        53
+        77: jsr           16
+        80: ret           1
+        82: astore_1
+        83: iconst_0
+        84: istore        5
+        86: iload         5
+        88: iload_2
+        89: isub
+        90: ifne          95
+        93: ret           1
+        95: iinc          5, 1
+        98: aload         4
+       100: monitorenter
+       101: goto          86
+       104: pop
+       105: getstatic     #14                 // Field java/lang/System.out:Ljava/io/PrintStream;
+       108: swap
+       109: invokevirtual #15                 // Method java/io/PrintStream.println:(Ljava/lang/Object;)V
+       112: return
+       113: aconst_null
+       114: checkcast     #16                 // class redpwnCTF_says_stop_using_ur_decompiler
+       117: ldc           #3                  // String java.utils.ArrayList
+       119: invokestatic  #17                 // Method java/lang/Class.forName:(Ljava/lang/String;)Ljava/lang/Class;
+       122: invokestatic  #18                 // Method java/util/concurrent/ThreadLocalRandom.current:()Ljava/util/concurrent/ThreadLocalRandom;
+       125: iconst_1
+       126: ldc           #4                  // int 65535
+       128: invokevirtual #19                 // Method java/util/concurrent/ThreadLocalRandom.nextInt:(II)I
+       131: putstatic     #20                 // Field a:I
+       134: pop2
+       135: aconst_null
+       136: goto          151
+       139: aload_0
+       140: aconst_null
+       141: astore_0
+       142: monitorexit
+       143: goto          113
+       146: aconst_null
+       147: athrow
+       148: goto          113
+       151: getstatic     #20                 // Field a:I
+       154: istore        13
+       156: iconst_0
+       157: istore_2
+       158: iconst_0
+       159: istore_3
+       160: ifnull        113
+       163: iload         13
+       165: lookupswitch  { // 3
+                    -555: 3
+                       1: 10
+                    4882: 0
+                 default: 200
+            }
+       200: aload_0
+       201: arraylength
+       202: iconst_1
+       203: isub
+       204: ifge          212
+       207: ldc           #5                  // String You need to specify the flag...
+       209: jsr           104
+       212: aload_0
+       213: iconst_0
+       214: aaload
+       215: astore_3
+       216: aload_3
+       217: invokevirtual #21                 // Method java/lang/String.length:()I
+       220: bipush        42
+       222: isub
+       223: ifeq          232
+       226: ldc           #1                  // String noob
+       228: jsr           104
+       231: return
+       232: aload_3
+       233: invokevirtual #22                 // Method java/lang/String.toCharArray:()[C
+       236: astore        4
+       238: aload         4
+       240: arraylength
+       241: istore_2
+       242: new           #8                  // class java/lang/Object
+       245: dup
+       246: invokespecial #23                 // Method java/lang/Object."<init>":()V
+       249: astore        6
+       251: jsr           82
+       254: jsr           30
+       257: iconst_0
+       258: istore        9
+       260: new           #24                 // class java/lang/StringBuilder
+       263: dup
+       264: invokespecial #25                 // Method java/lang/StringBuilder."<init>":()V
+       267: astore        12
+       269: aconst_null
+       270: iload         9
+       272: ifeq          295
+       275: pop
+       276: aload         12
+       278: invokevirtual #26                 // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+       281: ldc           #6                  // String +?>!|CUo*M;j\ts,=M;s*h,JF0s?8#{Z:
+       283: invokevirtual #27                 // Method java/lang/String.equals:(Ljava/lang/Object;)Z
+       286: ifne          292
+       289: goto          3
+       292: jsr           9
+       295: pop
+       296: invokestatic  #18                 // Method java/util/concurrent/ThreadLocalRandom.current:()Ljava/util/concurrent/ThreadLocalRandom;
+       299: iconst_1
+       300: ldc           #4                  // int 65535
+       302: invokevirtual #19                 // Method java/util/concurrent/ThreadLocalRandom.nextInt:(II)I
+       305: istore        9
+       307: iconst_0
+       308: istore        10
+       310: aload         4
+       312: monitorexit
+       313: aload         12
+       315: aload         4
+       317: iload         10
+       319: caload
+       320: aload         8
+       322: dup
+       323: iload         10
+       325: swap
+       326: arraylength
+       327: irem
+       328: iaload
+       329: ixor
+       330: i2c
+       331: invokevirtual #28                 // Method java/lang/StringBuilder.append:(C)Ljava/lang/StringBuilder;
+       334: pop
+       335: iinc          10, 1
+       338: iconst_0
+       339: istore        9
+       341: iload         13
+       343: ifne          113
+       346: goto          310
+       349: return
+      Exception table:
+         from    to  target type
+           113   139   151   any
+           139   143   151   any
+           146   148   151   any
+           270   349   270   Class java/lang/IllegalMonitorStateException
+}
